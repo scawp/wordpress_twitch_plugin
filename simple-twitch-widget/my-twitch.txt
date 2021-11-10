@@ -1,0 +1,13 @@
+// Register Sidebars
+function my_twitch() {
+
+	$args = array(
+		'id'            => 'simple_twitch_widget',
+		'class'         => 'simple_twitch_widget',
+		'name'          => __( 'Simple Twitch Widget' ),
+		'description'   => __( 'A Simple Twitch Widget' ),
+	);
+	register_sidebar( $args );
+
+}
+add_action( 'widgets_init', 'simple_twitch_widget' );
